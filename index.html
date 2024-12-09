@@ -21,7 +21,10 @@
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
 
     <!-- Linking the CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap"
@@ -457,41 +460,8 @@
     </main>
 
     <footer>
-      <p>
-        © <span id="current-year"></span> बाबा गोरखनाथ प्राकृतिक शुद्ध जडीबुटी
-        धूप
-      </p>
+      <p>© बाबा गोरखनाथ प्राकृतिक शुद्ध जडीबुटी धूप</p>
       <p>धुनिबेशी नगरपालिका - ३, धादिङ</p>
     </footer>
-
-    <script>
-      // Function to convert English numerals to Devanagari
-      function toDevanagari(num) {
-        const devanagariDigits = [
-          "०",
-          "१",
-          "२",
-          "३",
-          "४",
-          "५",
-          "६",
-          "७",
-          "८",
-          "९",
-        ];
-        return num
-          .toString()
-          .split("")
-          .map((digit) => devanagariDigits[parseInt(digit)])
-          .join("");
-      }
-
-      // Get the current year
-      const currentYear = new Date().getFullYear();
-
-      // Convert the year to Devanagari and update the span
-      document.getElementById("current-year").textContent =
-        toDevanagari(currentYear);
-    </script>
   </body>
 </html>

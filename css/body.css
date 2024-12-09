@@ -1,0 +1,32 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Noto Sans Devanagari", sans-serif; /* Fallback font */
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures body takes full height of the viewport */
+  justify-content: space-between; /* Footer sticks to the bottom */
+  margin: 0; /* Removed margin to prevent any overflow */
+}
+
+/* Media Queries for Mobile Responsiveness */
+/* Mobile devices (portrait) */
+@media screen and (max-width: 767px) {
+  body {
+    margin: 0; /* Ensures no margin on mobile */
+  }
+}
+
+/* Tablets (portrait) and small laptops */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    margin: 0; /* Ensures no margin on tablets */
+  }
+}
